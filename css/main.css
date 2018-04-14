@@ -1,0 +1,9 @@
+/* ========================================
+ * CSS written here will override Tachyons
+ * ======================================== */
+ body {
+   font-family: "Proxima Nova", sans-serif;
+ }
+.current-temp {
+  font-size: 400px;
+}
