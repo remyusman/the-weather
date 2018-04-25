@@ -1,9 +1,205 @@
 /* ========================================
  * CSS written here will override Tachyons
  * ======================================== */
- body {
+ html {
    font-family: "Proxima Nova", sans-serif;
  }
 .current-temp {
-  font-size: 400px;
+font-family: 'Fredoka One', cursive;
+  font-size: 300px;
 }
+
+/* Cold Weather */
+.cold .var {
+  background-color: lightblue;
+}
+.cold .circ {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: lightblue;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+    animation-direction: alternate;
+    animation-delay: -1s;
+}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: calc(100% - 60px);}
+}
+/* Warm Weather */
+.warm .var {
+  background-color: orange;
+}
+.warm .circ {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: orange;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+    animation-direction: alternate;
+    animation-delay: -1s;
+}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: calc(100% - 60px);}
+}
+/* Hot Weather */
+.hot .var {
+  background-color: red;
+}
+.hot .circ {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+    animation-direction: alternate;
+    animation-delay: -1s;
+}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: calc(100% - 60px);}
+}
+/* Thunderstorm */
+.thunderstorm .var {
+  background-color: darkgrey;
+}
+.thunderstorm .circ {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: darkgrey;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+    animation-direction: alternate;
+    animation-delay: -1s;
+}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: calc(100% - 60px);}
+}
+/* Drizzle */
+.drizzle .var {
+  background-color: lightgrey;
+}
+.drizzle .circ {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: lightgrey;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+    animation-direction: alternate;
+    animation-delay: -1s;
+}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: calc(100% - 60px);}
+}
+/* Rain */
+.rain .var {
+  background-color: blue;
+color: white;
+}
+.rain .circ {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: blue;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+    animation-direction: alternate;
+    animation-delay: -1s;
+}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: calc(100% - 60px);}
+}
+/* Snow */
+.snow .var {
+  background-color: grey;
+}
+.snow .circ {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: grey;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+    animation-direction: alternate;
+    animation-delay: -1s;
+}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: calc(100% - 60px);}
+}
+/* Atmosphere */
+
+/* Clear */
+
+/* Clouds */
+
+/* Calm-Wind */
+
+/* Breezy-Wind */
+
+/* Windy-Wind */

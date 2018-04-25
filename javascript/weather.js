@@ -7,7 +7,7 @@
 // on how to get one.
 // ============================================================
 
-const APIKEY = 'YOUR_API_KEY_HERE'
+const APIKEY = 'eefaa5b1d1e3841784667f6c6f0cb014'
 
 // ============================================================
 // Select DOM Elements

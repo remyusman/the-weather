@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
 
     <!-- Set a page title -->
     <title>Weather Forecast</title>
@@ -21,7 +22,7 @@
       </div>
 
       <!-- Search Box -->
-      <form id="location-search" class="ph4 mh5 mt3 bg-washed-red">
+      <form id="location-search" class="ph4 pb3 pb3-m pb0-ns mh6-ns mh4-m mh4 mt3 v-mid var">
         <h3 class="flex flex-wrap items-baseline">
           <span class="pv2 mr3 mb2">
             Enter your current location:
@@ -34,9 +35,19 @@
       <div class="flex flex-wrap pa4">
         <div class="w-100 w-50-m w-two-thirds-l">
           <!-- Temperature -->
-          <p class="current-temp mv0 pv0 ml4">53º<span id="temp"></span></p>
-          <p>high: <span id="temp-max"></span></p>
-          <p>low: <span id="temp-min"></span></p>
+
+          <!-- Animation -->
+          <div>
+          <div id="div1" class="circ"></div>
+          <div id="div2" class="circ"></div>
+          <div id="div3" class="circ"></div>
+          <div id="div4" class="circ"></div>
+          <div id="div5" class="circ"></div>
+        </div>
+          <!-- /Animation -->
+          <p class="current-temp mv0 pv0 tc"><span id="temp"></span>º</p>
+          <p class="pl6">high: <span id="temp-max"></span></p>
+          <p class="pl6">low: <span id="temp-min"></span></p>
         </div>
 
 <div class="w-100 w-50-m w-third-l">
