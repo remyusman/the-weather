@@ -22,9 +22,9 @@
       </div>
 
       <!-- Search Box -->
-      <form id="location-search" class="ph4 pb3 pb3-m pb0-ns mh6-ns mh4-m mh4 mt3 v-mid var">
+      <form id="location-search" class="ph4 pb3 pb1-m pb0-ns mh6-ns mh4-m mh4 mt3 v-mid var">
         <h3 class="flex flex-wrap items-baseline">
-          <span class="pv2 mr3 mb2">
+          <span class="pv2 mr3 mb1">
             Enter your current location:
           </span>
           <input type="text" id="area" value="Boston" class="flex-wrap">
@@ -32,36 +32,42 @@
       </form>
 
       <!-- Content -->
-      <div class="flex flex-wrap pa4">
-        <div class="w-100 w-50-m w-two-thirds-l">
+      <div class="flex flex-wrap mv4 mh6">
+        <div class="relative w-100 w-50-m w-two-thirds-l">
           <!-- Temperature -->
 
+          <div class="aspect-ratio--object flex items-center justify-center">
+          <p class="current-temp ma0 tc pb6 pr5"><span id="temp"></span>º</p>
+        </div>
+
+
           <!-- Animation -->
-          <div>
+          <div class="cover ma0">
           <div id="div1" class="circ"></div>
           <div id="div2" class="circ"></div>
           <div id="div3" class="circ"></div>
           <div id="div4" class="circ"></div>
           <div id="div5" class="circ"></div>
         </div>
-          <!-- /Animation -->
-          <p class="current-temp mv0 pv0 tc"><span id="temp"></span>º</p>
-          <p class="pl6">high: <span id="temp-max"></span></p>
-          <p class="pl6">low: <span id="temp-min"></span></p>
-        </div>
 
-<div class="w-100 w-50-m w-third-l">
+        <p class="pl6-l pl4-m pl0 f2-l f3-m f3">high: <span id="temp-max" class="txt"></span></p>
+        <p class="pl6-l pl4-m pl0 f2-l f3-m f3">low: <span id="temp-min" class="txt"></span></p>
+          <!-- /Animation -->
+
+      </div>
+
+<div class="w-100 w-50-m w-third-l pl3 pl4-m pl6-5 txt">
         <div class="w-100 w-50-m w-third-l">
           <h2>Location</h2>
-          <p>City: <span id="location-name"></span></p>
-          <p>Country: <span id="country"></span></p>
+          <p>[city] <span id="location-name"></span></p>
+          <p>[country] <span id="country"></span></p>
         </div>
 
         <div class="w-100 w-50-m w-third-l">
           <h2>Weather</h2>
-          <p>Condition: <span id="condition"></span></p>
-          <p>Desription: <span id="condition-description"></span></p>
-          <p>Wind Speed: <span id="wind-speed"></span>mph</p>
+          <p>[condition] <span id="condition"></span></p>
+          <p>[description] <span id="condition-description"></span></p>
+          <p>[wind speed] <span id="wind-speed"></span>mph</p>
         </div>
       </div>
     </div>
