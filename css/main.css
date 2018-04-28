@@ -59,9 +59,6 @@ font-family: 'Fredoka One', cursive;
 .cold .var {
   background-color: lightblue;
 }
-.cold .txt {
-  color: lightblue;
-}
 .cold .circ {
     width: 60px;
     height: 60px;
@@ -87,9 +84,6 @@ font-family: 'Fredoka One', cursive;
 /* Warm Weather */
 .warm .var {
   background-color: orange;
-}
-.warm .txt {
-  color: orange;
 }
 .warm .circ {
     width: 60px;
@@ -117,9 +111,6 @@ font-family: 'Fredoka One', cursive;
 .hot .var {
   background-color: red;
 }
-.hot .txt {
-  color: red;
-}
 .hot .circ {
     width: 60px;
     height: 60px;
@@ -146,9 +137,6 @@ font-family: 'Fredoka One', cursive;
 .thunderstorm .var {
   background-color: darkgrey;
 }
-.thunderstorm .txt {
-  color: darkgrey;
-}
 .thunderstorm .circ {
     width: 60px;
     height: 60px;
@@ -174,9 +162,6 @@ font-family: 'Fredoka One', cursive;
 /* Drizzle */
 .drizzle .var {
   background-color: lightgrey;
-}
-.drizzle .txt {
-  color: lightgrey;
 }
 .drizzle .circ {
     width: 60px;
@@ -205,9 +190,6 @@ font-family: 'Fredoka One', cursive;
   background-color: blue;
 color: white;
 }
-.rain .txt {
-  color: blue;
-}
 .rain .circ {
     width: 60px;
     height: 60px;
@@ -233,9 +215,6 @@ color: white;
 /* Snow */
 .snow .var {
   background-color: grey;
-}
-.snow .txt {
-  color: grey;
 }
 .snow .circ {
     width: 60px;
