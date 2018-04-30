@@ -98,9 +98,11 @@ font-family: 'Fredoka One', cursive;
 }
 .warm .circ {
     background-color: orange;
+  }
+  .calm .circ {
     position: relative;
     -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
-    animation: mymove 5s infinite;
+    animation: mymove 15s infinite;
     animation-direction: alternate;
     animation-delay: -1s;
 }
@@ -115,17 +117,30 @@ font-family: 'Fredoka One', cursive;
     from {left: 0%;}
     to {left: calc(100% - 60px);}
 }
-/* Hot Weather */
-.hot .var {
-  background-color: red;
+    .breezy .circ {
+      position: relative;
+      -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+      animation: mymove 10s infinite;
+      animation-direction: alternate;
+      animation-delay: -1s;
+  }
+
+  #div1 {animation-timing-function: linear;}
+  #div2 {animation-timing-function: ease;}
+  #div3 {animation-timing-function: ease-in;}
+  #div4 {animation-timing-function: ease-out;}
+  #div5 {animation-timing-function: ease-in-out;}
+
+  @keyframes mymove {
+      from {left: 0%;}
+      to {left: calc(100% - 60px);}
 }
-.hot .circ {
-    background-color: red;
-    position: relative;
-    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
-    animation: mymove 5s infinite;
-    animation-direction: alternate;
-    animation-delay: -1s;
+.windy .circ {
+  position: relative;
+  -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove 5s infinite;
+  animation-direction: alternate;
+  animation-delay: -1s;
 }
 
 #div1 {animation-timing-function: linear;}
@@ -135,8 +150,15 @@ font-family: 'Fredoka One', cursive;
 #div5 {animation-timing-function: ease-in-out;}
 
 @keyframes mymove {
-    from {left: 0px;}
-    to {left: calc(100% - 60px);}
+  from {left: 0%;}
+  to {left: calc(100% - 60px);}
+}
+/* Hot Weather */
+.hot .var {
+  background-color: red;
+}
+.hot .circ {
+    background-color: red;
 }
 /* Thunderstorm */
 .thunderstorm .var {
@@ -144,22 +166,6 @@ font-family: 'Fredoka One', cursive;
 }
 .thunderstorm .circ {
     background-color: darkgrey;
-    position: relative;
-    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
-    animation: mymove 5s infinite;
-    animation-direction: alternate;
-    animation-delay: -1s;
-}
-
-#div1 {animation-timing-function: linear;}
-#div2 {animation-timing-function: ease;}
-#div3 {animation-timing-function: ease-in;}
-#div4 {animation-timing-function: ease-out;}
-#div5 {animation-timing-function: ease-in-out;}
-
-@keyframes mymove {
-    from {left: 0px;}
-    to {left: calc(100% - 60px);}
 }
 /* Drizzle */
 .drizzle .var {
@@ -167,22 +173,6 @@ font-family: 'Fredoka One', cursive;
 }
 .drizzle .circ {
     background-color: lightgrey;
-    position: relative;
-    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
-    animation: mymove 5s infinite;
-    animation-direction: alternate;
-    animation-delay: -1s;
-}
-
-#div1 {animation-timing-function: linear;}
-#div2 {animation-timing-function: ease;}
-#div3 {animation-timing-function: ease-in;}
-#div4 {animation-timing-function: ease-out;}
-#div5 {animation-timing-function: ease-in-out;}
-
-@keyframes mymove {
-    from {left: 0px;}
-    to {left: calc(100% - 60px);}
 }
 /* Rain */
 .rain .var {
@@ -191,22 +181,6 @@ color: white;
 }
 .rain .circ {
     background-color: blue;
-    position: relative;
-    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
-    animation: mymove 5s infinite;
-    animation-direction: alternate;
-    animation-delay: -1s;
-}
-
-#div1 {animation-timing-function: linear;}
-#div2 {animation-timing-function: ease;}
-#div3 {animation-timing-function: ease-in;}
-#div4 {animation-timing-function: ease-out;}
-#div5 {animation-timing-function: ease-in-out;}
-
-@keyframes mymove {
-    from {left: 0px;}
-    to {left: calc(100% - 60px);}
 }
 /* Snow */
 .snow .var {
@@ -214,29 +188,7 @@ color: white;
 }
 .snow .circ {
     background-color: grey;
-    position: relative;
-    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
-    animation: mymove 5s infinite;
-    animation-direction: alternate;
-    animation-delay: -1s;
 }
-
-#div1 {animation-timing-function: linear;}
-#div2 {animation-timing-function: ease;}
-#div3 {animation-timing-function: ease-in;}
-#div4 {animation-timing-function: ease-out;}
-#div5 {animation-timing-function: ease-in-out;}
-
-@keyframes mymove {
-    from {left: 0px;}
-    to {left: calc(100% - 60px);}
-}
-/* Atmosphere */
-
-/* Clear */
-
-/* Clouds */
-
 /* Calm-Wind */
 .wsp .calm {
   font-style: normal;
