@@ -8,50 +8,64 @@
 font-family: 'Fredoka One', cursive;
   font-size: 300px;
 }
-@media  (max-width: 960px) {
+.pn {
+  position: absolute;
+  top: 10%;
+}
+@media  (max-width: 1281px) {
+  .circ {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+}
+@media  (max-width: 737px) {
   .current-temp {
   font-size: 250px;
   }
-}
-@media  (max-width: 900px) {
-  .current-temp {
-  font-size: 215px;
-  }
   .circ {
-      width: 55px;
-      height: 55px;
-      border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+    .big.pn {
+      margin: 0px;
     }
 }
-@media  (max-width: 737px) {
+@media  (min-width: 737px) {
+  .big {
+  margin: 0px;
+  }
+}
+@media  (max-width: 550px) {
+  .current-temp {
+  font-size: 200px;
+  }
+  .circ {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+}
+@media  (max-width: 465px) {
   .current-temp {
   font-size: 175px;
   }
   .circ {
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-    }
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
 }
-@media  (max-width: 608px) {
+@media  (max-width: 335px) {
   .current-temp {
   font-size: 150px;
+  padding-left: 2.5%;
   }
-}
-@media  (max-width: 510px) {
-  .current-temp {
-  font-size: 125px;
-  }
-}
-@media  (max-width: 479px) {
-  .current-temp {
-  font-size: 200px;
-  }
-}
-@media  (max-width: 423px) {
-  .current-temp {
-  font-size: 150px;
-  padding-left: 64px;
+  .circ {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
   }
 }
 .cover { background-size: cover }
@@ -60,9 +74,6 @@ font-family: 'Fredoka One', cursive;
   background-color: lightblue;
 }
 .cold .circ {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
     background-color: lightblue;
     position: relative;
     -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
@@ -86,9 +97,6 @@ font-family: 'Fredoka One', cursive;
   background-color: orange;
 }
 .warm .circ {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
     background-color: orange;
     position: relative;
     -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
@@ -104,7 +112,7 @@ font-family: 'Fredoka One', cursive;
 #div5 {animation-timing-function: ease-in-out;}
 
 @keyframes mymove {
-    from {left: 0px;}
+    from {left: 0%;}
     to {left: calc(100% - 60px);}
 }
 /* Hot Weather */
@@ -112,9 +120,6 @@ font-family: 'Fredoka One', cursive;
   background-color: red;
 }
 .hot .circ {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
     background-color: red;
     position: relative;
     -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
@@ -138,9 +143,6 @@ font-family: 'Fredoka One', cursive;
   background-color: darkgrey;
 }
 .thunderstorm .circ {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
     background-color: darkgrey;
     position: relative;
     -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
@@ -164,9 +166,6 @@ font-family: 'Fredoka One', cursive;
   background-color: lightgrey;
 }
 .drizzle .circ {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
     background-color: lightgrey;
     position: relative;
     -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
@@ -191,9 +190,6 @@ font-family: 'Fredoka One', cursive;
 color: white;
 }
 .rain .circ {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
     background-color: blue;
     position: relative;
     -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
@@ -217,9 +213,6 @@ color: white;
   background-color: grey;
 }
 .snow .circ {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
     background-color: grey;
     position: relative;
     -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
@@ -245,7 +238,14 @@ color: white;
 /* Clouds */
 
 /* Calm-Wind */
-
+.wsp .calm {
+  font-style: normal;
+}
 /* Breezy-Wind */
-
+.wsp .breezy {
+  font-style: italic;
+}
 /* Windy-Wind */
+.wsp .windy {
+  font-style: oblique;
+}
